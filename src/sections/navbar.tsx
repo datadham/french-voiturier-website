@@ -30,10 +30,10 @@ const Navbar: React.FC = () => {
             <a
               href="https://parkboost-app.netlify.app"
               target="_blank"
-              className="text-white hover:text-blue-400 bg-gray-900 rounded-full px-4 py-2"
+              className="text-white hover:bg-gray-700 bg-gray-900 rounded-full px-6 py-2"
               rel="noopener noreferrer"
             >
-              Me connecter
+              Connexion
             </a>
           </div>
 

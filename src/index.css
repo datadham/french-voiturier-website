@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --color-primary: #1d4ed8; /* Blue */
+  --color-secondary: #9333ea; /* Purple */
+  --color-accent: #22c55e; /* Green */
+}
+
+
 /* Custom CSS to hide scrollbar */
 .scrollbar-hide {
   -ms-overflow-style: none; /* Internet Explorer 10+ */
@@ -10,4 +17,16 @@
 
 .scrollbar-hide::-webkit-scrollbar {
   display: none; /* Chrome, Safari, and Opera */
+}
+
+.text-brand-blue {
+  background: linear-gradient(90deg, #54b6eb, #3d8af5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-brand-gold {
+  background: linear-gradient(90deg, #ffd700, #f0c974, #e6ac00); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

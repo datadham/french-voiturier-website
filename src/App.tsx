@@ -25,6 +25,7 @@ function App() {
   const [departureTime, setDepartureTime] = useState('');
   const [arrivalDate, setArrivalDate] = useState('');
   const [arrivalTime, setArrivalTime] = useState('');
+  const [airport, setAirport] = useState('');
   const [service, setService] = useState('standard');
 
   const prices = {
@@ -121,10 +122,10 @@ function App() {
         <div className="relative z-10 flex items-center justify-center min-h-screen pt-20 pb-12 px-6">
           <div className="w-full max-w-5xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
             <div className="text-center lg:text-left">
-              <h2 className="text-5xl md:text-6xl font-bold text-blue-300 mb-6">
-                Service Voiturier Premium
+              <h2 className="text-5xl md:text-5xl font-bold text-white mb-6">
+                Service Voiturier <span className='text-brand-gold'>Premium</span> 
               </h2>
-              <p className="text-xl text-white mb-8 max-w-2xl">
+              <p className="text-xl text-gray-400 mb-8 max-w-2xl">
                 Un service d'excellence pour vos événements prestigieux
               </p>
             </div>
@@ -134,7 +135,25 @@ function App() {
                 Réserver un voiturier
               </h3>
               <form className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-4">
+              <div className="space-y-2">
+    <label className="block text-sm font-medium text-gray-700">Aéroport</label>
+    <select
+      value={airport}
+      onChange={(e) => setAirport(e.target.value)}
+      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200"
+      required
+    >
+      <option value="" disabled>
+        Sélectionnez un aéroport
+      </option>
+      <option value="Nice">Aéroport de Nice</option>
+      <option value="Marseille">Aéroport de Marseille</option>
+      <option value="Nîmes">Aéroport de Nîmes</option>
+    </select>
+  </div>
+           
+               
+                <div className="grid md:grid-cols-2 gap-4"> 
                   <div className="space-y-2">
                     <label className="block text-sm font-medium text-gray-700">
                       Date de départ
