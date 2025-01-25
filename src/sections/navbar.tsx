@@ -10,7 +10,7 @@ const Navbar: React.FC = () => {
           {/* Logo */}
           <div className="flex items-center justify-center md:mx-0 mx-auto">
             <img
-              src="src/static/img/nav-logo.png"
+              src="img/nav-logo.png"
               alt="Logo"
               className="w-24 h-24 object-contain"
             />
