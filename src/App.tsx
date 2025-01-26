@@ -87,7 +87,7 @@ function App() {
             <div className="text-center lg:text-left">
                   <img
                   src="public/img/plane-icon.png"
-                  className="w-48 h-48  scale-x-[-1] mx-auto md:mx-0"
+                  className="w-48 h-48  scale-x-[-1] mx-auto lg:mx-0"
                   alt="plane icon"
                 />
               <h2 className="text-5xl md:text-5xl font-bold text-white mb-6">
