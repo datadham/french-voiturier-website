@@ -17,14 +17,14 @@ const Navbar: React.FC = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-8 items-center">
-            <a href="#services" className="text-gray-900 hover:text-blue-400">
+          <div className="hidden md:flex space-x-8 items-center font-bold">
+            <a href="#services" className="text-gray-700 hover:text-blue-400">
               Services
             </a>
-            <a href="#about" className="text-gray-900 hover:text-blue-400">
+            <a href="#about" className="text-gray-700 hover:text-blue-400">
               À propos
             </a>
-            <a href="#contact" className="text-gray-900 hover:text-blue-400">
+            <a href="#contact" className="text-gray-700 hover:text-blue-400">
               Contact
             </a>
             <a

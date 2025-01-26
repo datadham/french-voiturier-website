@@ -13,12 +13,15 @@ import {
   Umbrella,
   Star,
   Quote,
+  ArrowBigLeft,
+  ArrowBigRight
 } from 'lucide-react';
 
 import Testimonials from './sections/testimonials';
 import Contact from './sections/contact';
 import Footer from './sections/footer';
 import Navbar from './sections/navbar';
+import CarouselComponent from './sections/carroussel';
 
 function App() {
   const [departureDate, setDepartureDate] = useState('');
@@ -61,46 +64,6 @@ function App() {
       highSeason: 229,
     },
   ];
-
-  const ServicesOptions = [
-    {
-      service: 'Lavage Auto',
-      description:
-        'Nettoyage intérieur et extérieur complet de votre véhicule.',
-      price: 20,
-    },
-    {
-      service: 'Pression des Pneus',
-      description: 'Vérification et ajustement de la pression des pneus.',
-      price: 5,
-    },
-    {
-      service: 'Contrôle Technique',
-      description: 'Préparation et passage au contrôle technique.',
-      price: 70,
-    },
-    {
-      service: 'Nettoyage des Jantes',
-      description:
-        'Nettoyage approfondi des jantes pour leur redonner de l’éclat.',
-      price: 15,
-    },
-    {
-      service: 'Traitement Anti-Rayures',
-      description: 'Application d’un traitement pour atténuer les rayures.',
-      price: 50,
-    },
-  ];
-
-  const scrollLeft = () => {
-    const carousel = document.getElementById('carroussel');
-    carousel?.scrollBy({ left: -300, behavior: 'smooth' });
-  };
-
-  const scrollRight = () => {
-    const carousel = document.getElementById('carroussel');
-    carousel?.scrollBy({ left: 300, behavior: 'smooth' });
-  };
 
   return (
     <div className="min-h-screen bg-white">
@@ -247,6 +210,46 @@ function App() {
           </div>
         </div>
       </header>
+                    
+
+      <section className="py-20 bg-white">
+         <div className="max-w-4xl mx-auto px-6 mb-20">
+            <div>
+              <p className='text-3xl md:text-3xl text-brand-blue'>Comment ça marche ?</p>
+              <h2 className="text-5xl md:text-5xl font-bold  mb-6">
+              Votre parking avec service voiturier privé 
+              </h2>
+              <p className="text-xl mb-3 text-gray-700">
+              French Voiturier réceptionne votre véhicule à l’aéroport, puis le gare dans son parking sécurisé et vous le ramène sans délai à votre retour.
+              </p>
+              <p className="text-xl text-gray-700">
+              À votre arrivée au terminal, un de nos voituriers professionnels vous attendra pour récupérer votre véhicule. Nous effectuons un état des lieux gratuit et complet de votre véhicule sur place, vous assurant une totale transparence
+              </p>
+            </div>
+          </div>
+
+          <div className="mx-auto p-20 bg-brand-blue text-center">
+            <div className='max-w-2xl mx-auto'>
+              <h3 className='text-xl text-brand-gold font-semibold'>Des Experts du domaine</h3>
+              <h2 className="text-5xl md:text-5xl font-bold  text-white mb-6">
+              Pourquoi choisir French Voiturier & Co ? 
+              </h2>
+              <p className="text-xl text-gray-200 mb-10">
+              Des prix transparents et compétitifs pour votre stationnement à l'aéroport de Lyon, Marseille, Nîmes, Nice
+              </p>
+
+              <a
+              href="https://parkboost-app.netlify.app"
+              target="_blank"
+              className="hover:border hover:border-white hover:border-2 hover:transition bg-gray-900 rounded-full px-12 py-4 mt-4 font-semibold text-white"
+              rel="noopener noreferrer"
+            >
+              Réservez maintenant
+            </a>
+            </div>
+          </div>
+      </section>
+
 
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-6">
@@ -388,57 +391,8 @@ function App() {
 
           <div className="max-w-6xl mx-auto py-10 relative">
             <h2 className="text-3xl font-bold text-center mb-8">Nos Options</h2>
-
             {/* Carousel Wrapper */}
-            <div
-              id="carroussel"
-              className="overflow-x-auto flex space-x-6 py-4 px-6 scrollbar-hide"
-            >
-              {ServicesOptions.map((option, index) => (
-                <div
-                  key={index}
-                  className="min-w-[300px] bg-white border border-gray-300 rounded-xl shadow-lg flex flex-col"
-                >
-                  {/* Option.image */}
-                  <img
-                    src="https://images.unsplash.com/photo-1605164599894-ca98960d41b6?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGxhdmFnZSUyMGF1dG98ZW58MHx8MHx8fDA%3D"
-                    alt={option.service}
-                    className="w-full object-cover rounded-t-xl"
-                  />
-                  <div className="p-4 flex flex-col h-full">
-                    <h3 className="text-lg font-semibold mb-2">
-                      {option.service}
-                    </h3>
-                    <p className="text-gray-600 mb-4">{option.description}</p>
-                    <div className="mt-auto">
-                      <p className="text-gray-700">{option.price} €</p>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            <div className="flex justify-center gap-8">
-              {/* Left Button */}
-              <div className="z-10">
-                <button
-                  className="bg-gray-800 text-white p-3 rounded-full shadow hover:bg-gray-600 transition"
-                  onClick={() => scrollLeft()}
-                >
-                  &larr;
-                </button>
-              </div>
-
-              {/* Right Button */}
-              <div className="z-10">
-                <button
-                  className="bg-gray-800 text-white p-3 rounded-full shadow hover:bg-gray-600 transition"
-                  onClick={() => scrollRight()}
-                >
-                  &rarr;
-                </button>
-              </div>
-            </div>
+            <CarouselComponent />
           </div>
 
           <div className="text-sm text-gray-500 mb-12">

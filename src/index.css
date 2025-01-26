@@ -30,3 +30,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.bg-brand-blue {
+  background:  linear-gradient(90deg, #54b6eb, #3d8af5);;
+}
