@@ -213,42 +213,55 @@ function App() {
                     
 
       <section className="py-20 bg-white">
-         <div className="max-w-4xl mx-auto px-6 mb-20">
-            <div>
-              <p className='text-3xl md:text-3xl text-brand-blue'>Comment ça marche ?</p>
-              <h2 className="text-5xl md:text-5xl font-bold  mb-6">
-              Votre parking avec service voiturier privé 
-              </h2>
-              <p className="text-xl mb-3 text-gray-700">
-              French Voiturier réceptionne votre véhicule à l’aéroport, puis le gare dans son parking sécurisé et vous le ramène sans délai à votre retour.
-              </p>
-              <p className="text-xl text-gray-700">
-              À votre arrivée au terminal, un de nos voituriers professionnels vous attendra pour récupérer votre véhicule. Nous effectuons un état des lieux gratuit et complet de votre véhicule sur place, vous assurant une totale transparence
-              </p>
-            </div>
-          </div>
+  <div className="max-w-4xl mx-auto px-6 mb-20">
+    <div>
+      <p className="text-3xl md:text-3xl text-brand-blue">Comment ça marche ?</p>
+      <h2 className="text-5xl md:text-5xl font-bold mb-6">
+        Votre parking avec service voiturier privé
+      </h2>
+      <p className="text-xl mb-3 text-gray-700">
+        French Voiturier réceptionne votre véhicule à l’aéroport, puis le gare
+        dans son parking sécurisé et vous le ramène sans délai à votre retour.
+      </p>
+      <p className="text-xl text-gray-700">
+        À votre arrivée au terminal, un de nos voituriers professionnels vous
+        attendra pour récupérer votre véhicule. Nous effectuons un état des
+        lieux gratuit et complet de votre véhicule sur place, vous assurant une
+        totale transparence.
+      </p>
+    </div>
+  </div>
 
-          <div className="mx-auto p-20 bg-brand-blue text-center">
-            <div className='max-w-2xl mx-auto'>
-              <h3 className='text-xl text-brand-gold font-semibold'>Des Experts du domaine</h3>
-              <h2 className="text-5xl md:text-5xl font-bold  text-white mb-6">
-              Pourquoi choisir French Voiturier & Co ? 
-              </h2>
-              <p className="text-xl text-gray-200 mb-10">
-              Des prix transparents et compétitifs pour votre stationnement à l'aéroport de Lyon, Marseille, Nîmes, Nice
-              </p>
+  <div className="relative mx-auto p-20 bg-brand-blue text-center ">
+    <div className="relative z-10 md:max-w-2xl mx-auto">
+      <h3 className="text-xl text-brand-gold font-semibold">
+        Des Experts du domaine
+      </h3>
+      <h2 className="text-5xl md:text-5xl font-bold text-white mb-6">
+        Pourquoi choisir French Voiturier & Co ?
+      </h2>
+      <p className="text-xl text-gray-200 mb-10">
+        Des prix transparents et compétitifs pour votre stationnement à
+        l'aéroport de Lyon, Marseille, Nîmes, Nice.
+      </p>
 
-              <a
-              href="https://parkboost-app.netlify.app"
-              target="_blank"
-              className="hover:border hover:border-white hover:border-2 hover:transition bg-gray-900 rounded-full px-12 py-4 mt-4 font-semibold text-white"
-              rel="noopener noreferrer"
-            >
-              Réservez maintenant
-            </a>
-            </div>
-          </div>
-      </section>
+      <a
+        href="https://parkboost-app.netlify.app"
+        target="_blank"
+        className="hover:border hover:border-white hover:border-2 hover:transition bg-gray-900 rounded-full px-12 py-4 mt-4 font-semibold text-white"
+        rel="noopener noreferrer"
+      >
+        Réservez maintenant
+      </a>
+    </div>
+
+    <img
+      src="public/img/plane-icon.png"
+      className="absolute right-10 -bottom-20 w-64 h-64 z-0"
+      alt="plane icon"
+    />
+  </div>
+</section>
 
 
       <section className="py-20 bg-white">
