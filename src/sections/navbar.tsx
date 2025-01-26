@@ -17,7 +17,7 @@ const Navbar: React.FC = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-8 items-center font-bold">
+          <div className="hidden md:flex space-x-8 items-center">
             <a href="#services" className="text-gray-700 hover:text-blue-400">
               Services
             </a>
@@ -30,7 +30,7 @@ const Navbar: React.FC = () => {
             <a
               href="https://parkboost-app.netlify.app"
               target="_blank"
-              className="text-white hover:bg-gray-700 bg-gray-900 rounded-full px-6 py-2"
+              className="text-white hover:bg-gray-700 bg-gray-900 rounded-full px-6 py-2 font-semibold"
               rel="noopener noreferrer"
             >
               Connexion

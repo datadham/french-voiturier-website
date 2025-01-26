@@ -34,3 +34,7 @@
 .bg-brand-blue {
   background:  linear-gradient(90deg, #54b6eb, #3d8af5);;
 }
+
+.bg-brand-blue-transparent {
+    background: linear-gradient(90deg, #54b6eb, rgba(61, 138, 245, 0.4));
+}

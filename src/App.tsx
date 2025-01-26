@@ -77,7 +77,7 @@ function App() {
               backgroundAttachment: 'fixed',
             }}
           />
-          <div className="absolute inset-0 bg-black/50"></div>
+          <div className="absolute inset-0 bg-brand-blue-transparent"></div>
         </div>
 
         <Navbar />
@@ -85,12 +85,20 @@ function App() {
         <div className="relative z-10 flex items-center justify-center min-h-screen pt-20 pb-12 px-6">
           <div className="w-full max-w-5xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
             <div className="text-center lg:text-left">
+                  <img
+                  src="public/img/plane-icon.png"
+                  className="w-48 h-48  scale-x-[-1] mx-auto md:mx-0"
+                  alt="plane icon"
+                />
               <h2 className="text-5xl md:text-5xl font-bold text-white mb-6">
                 Service Voiturier <span className='text-brand-gold'>Premium</span> 
               </h2>
-              <p className="text-xl text-gray-400 mb-8 max-w-2xl">
-                Un service d'excellence pour vos événements prestigieux
+              <p className="text-xl text-gray-200 mb-8 max-w-2xl">
+                Un service d'excellence pour votre stationnement à
+        l'aéroport de <span className='text-2xl font-bold text-gray-100'>Lyon</span>, <span className='text-2xl font-bold text-gray-100' >Marseille</span>, <span className='text-2xl font-bold text-gray-100'>Nîmes</span>, <span className='text-2xl font-bold text-gray-100'>Nice</span>
               </p>
+
+
             </div>
 
             <div className="bg-white backdrop-blur rounded-2xl p-8 shadow-xl">
@@ -212,9 +220,9 @@ function App() {
       </header>
                     
 
-      <section className="py-20 bg-white">
-  <div className="max-w-4xl mx-auto px-6 mb-20">
-    <div>
+  <section className="py-20 bg-white">
+  <div className="max-w-4xl mx-auto px-6 mb-20 h-screen">
+    <div className='flex flex-col justify-center h-full'>
       <p className="text-3xl md:text-3xl text-brand-blue">Comment ça marche ?</p>
       <h2 className="text-5xl md:text-5xl font-bold mb-6">
         Votre parking avec service voiturier privé
