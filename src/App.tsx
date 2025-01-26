@@ -93,7 +93,7 @@ function App() {
               <h2 className="text-5xl md:text-5xl font-bold text-white mb-6">
                 Service Voiturier <span className='text-brand-gold'>Premium</span> 
               </h2>
-              <p className="text-xl text-gray-200 mb-8 max-w-2xl">
+              <p className="text-xl text-gray-200 mb-8">
                 Un service d'excellence pour votre stationnement à
         l'aéroport de <span className='text-2xl font-bold text-gray-100'>Lyon</span>, <span className='text-2xl font-bold text-gray-100' >Marseille</span>, <span className='text-2xl font-bold text-gray-100'>Nîmes</span>, <span className='text-2xl font-bold text-gray-100'>Nice</span>
               </p>
@@ -240,7 +240,7 @@ function App() {
     </div>
   </div>
 
-  <div className="relative mx-auto py-20 bg-brand-blue text-center ">
+  <div className="relative mx-auto py-20 bg-brand-blue text-center px-6">
     <div className="relative z-10 md:max-w-2xl mx-auto">
       <h3 className="text-xl text-brand-gold font-semibold">
         Des Experts du domaine
