@@ -86,7 +86,7 @@ function App() {
           <div className="w-full max-w-5xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
             <div className="text-center lg:text-left">
                   <img
-                  src="public/img/plane-icon.png"
+                  src="img/plane-icon.png"
                   className="w-48 h-48  scale-x-[-1] mx-auto lg:mx-0"
                   alt="plane icon"
                 />
@@ -240,7 +240,7 @@ function App() {
     </div>
   </div>
 
-  <div className="relative mx-auto p-20 bg-brand-blue text-center ">
+  <div className="relative mx-auto py-20 bg-brand-blue text-center ">
     <div className="relative z-10 md:max-w-2xl mx-auto">
       <h3 className="text-xl text-brand-gold font-semibold">
         Des Experts du domaine
@@ -248,15 +248,16 @@ function App() {
       <h2 className="text-5xl md:text-5xl font-bold text-white mb-6">
         Pourquoi choisir French Voiturier & Co ?
       </h2>
-      <p className="text-xl text-gray-200 mb-10">
+      <p className="text-xl text-gray-200 mb-5">
         Des prix transparents et compétitifs pour votre stationnement à
         l'aéroport de Lyon, Marseille, Nîmes, Nice.
       </p>
 
+    
       <a
         href="https://parkboost-app.netlify.app"
         target="_blank"
-        className="hover:border hover:border-white hover:border-2 hover:transition bg-gray-900 rounded-full px-12 py-4 mt-4 font-semibold text-white"
+        className="inline-block text-white text-center border border-2 border-black hover:border hover:border-white hover:border-2 hover:transition bg-gray-900 rounded-full px-12 py-4  font-semibold"
         rel="noopener noreferrer"
       >
         Réservez maintenant
@@ -264,8 +265,8 @@ function App() {
     </div>
 
     <img
-      src="public/img/plane-icon.png"
-      className="absolute right-10 -bottom-20 w-64 h-64 z-0"
+      src="img/plane-icon.png"
+      className="absolute right-10 -bottom-40 sm:-bottom-20 w-64 h-64 z-0"
       alt="plane icon"
     />
   </div>
